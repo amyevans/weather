@@ -1,0 +1,52 @@
+body {
+	background: url('img/default.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.main-row {
+	height: 100vh;
+	/* prevents half pixel w/vertical centering */
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.content {
+	color: white;
+	background-color: rgba(200,200,200,0.7);
+	/* to center vertically */
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding: 10px 10px;
+}
+
+.btn {
+	margin: 10px 10px;
+	opacity: 0.8;
+	color: rgba(25, 25, 25, 0.9);
+}
+
+h1 {
+	padding-bottom: 25px;
+}
+
+.border {
+	background-color: none;
+	border-bottom: 3px;
+	border-bottom-color: white;
+	border-bottom-style: dotted;
+	padding: 10px 5px 0 5px;
+	font-size: 200%;
+}
+
+.city, .temp, .weather {
+	color: white;
+}
+
+.unit {
+	margin-right: 10px;
+	margin-top: 5px;
+}
