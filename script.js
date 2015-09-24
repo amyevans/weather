@@ -11,11 +11,11 @@ $(document).ready(function() {
 	
 	function updateBg(weatherDesc, temp_f) {
 		var descArr = [[['Thunderstorm', 'Rain', 'Drizzle', 'Hail', 'Mist'], 'img/rain.jpg'],
-						[['Clear'], 'img/sunny-cold.jpg'],
-						[['Snow', 'Ice'], 'img/snow.jpg'],
+						[['Snow', 'Ice'], 'img/snow.jpeg'],
 						[['Cloud', 'Overcast'], 'img/cloudy.jpg'],
 						[['Fog'], 'img/fog.jpg'],
-						[['Sand', 'Dust', 'Smoke', 'Ash', 'Haze', 'Whirls'], 'img/sand.jpg']
+						[['Sand', 'Dust', 'Smoke', 'Ash', 'Haze', 'Whirls'], 'img/sand.jpg'],
+						[['Clear'], 'img/sunny-cold.jpg']
 						];
 
 		// For clear days, choose between 2 images based on temp. Here, warm sun; in array, cold sun.
@@ -24,7 +24,7 @@ $(document).ready(function() {
 		}
 
 		// Use indexOf to look for a match of the weatherDesc in the array of descriptions and when found, return the corresponding bg img
-		for (i=0; i<descArr[i].length; i++) {
+		for (i=0; i<descArr.length; i++) {
 			for (j=0; j<descArr[i][0].length; j++) {
 				if (weatherDesc.indexOf(descArr[i][0][j]) > -1) {
 					return descArr[i][1];
